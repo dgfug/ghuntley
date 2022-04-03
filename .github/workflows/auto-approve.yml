@@ -8,6 +8,8 @@ on:
 
 jobs:
   auto-approve:
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
     - uses: hmarr/auto-approve-action@v2.2.0
